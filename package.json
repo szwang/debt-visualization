@@ -6,7 +6,6 @@
   "scripts": {
     "start": "webpack --watch & nodemon server.js",
     "deploy": "NODE_ENV=production webpack -p --config webpack.config.js & node server.js"
-    
   },
   "repository": {
     "type": "git",
@@ -31,6 +30,9 @@
     "d3plus": "^1.9.2",
     "express": "^4.13.4",
     "express-session": "^1.13.0",
+    "fs": "0.0.2",
+    "json-loader": "^0.5.4",
+    "lodash": "^4.8.2",
     "nodemon": "^1.9.1",
     "path": "^0.12.7",
     "react": "^0.14.8",

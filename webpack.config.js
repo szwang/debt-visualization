@@ -4,7 +4,7 @@ var path = require('path');
 module.exports = {
   entry: [
     'webpack-hot-middleware/client',
-    './src/app.js'
+    './src/App.js'
   ],
 
   output: {
@@ -28,6 +28,10 @@ module.exports = {
       { 
         test: /\.(coffee\.md|litcoffee)$/, 
         loader: "coffee-loader?literate" 
+      },
+      {
+        test: /\.json$/,
+        loader: "json-loader"
       }
     ]
   },
